@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hypensterisk/hypensterisk.github.io/issues"
   },
-  "homepage": "https://github.com/hypensterisk/hypensterisk.github.io#readme"
+  "homepage": "https://github.com/hypensterisk/hypensterisk.github.io#readme",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  }
 }
