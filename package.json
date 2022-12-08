@@ -1,7 +1,7 @@
 {
   "name": "hypensterisk.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repository For My Portfolio Website",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -12,13 +12,17 @@
     "type": "git",
     "url": "git+https://github.com/hypensterisk/hypensterisk.github.io.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "portfolio",
+    "website",
+    "react"
+  ],
+  "author": "hypensterisk",
+  "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/hypensterisk/hypensterisk.github.io/issues"
   },
-  "homepage": "https://github.com/hypensterisk/hypensterisk.github.io#readme",
+  "homepage": "https://hypensterisk.github.io/",
   "devDependencies": {
     "@types/aos": "^3.0.4",
     "@types/react": "^18.0.26",
