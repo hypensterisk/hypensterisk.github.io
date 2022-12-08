@@ -7,22 +7,15 @@ import {
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {Container, Nav, Navbar as NavbarReactBootstrap} from 'react-bootstrap'
+import {Container, Nav, Navbar} from 'react-bootstrap'
 
-export default function Navbar() {
+export default function Header() {
   return (
-    <NavbarReactBootstrap
-      bg='dark'
-      collapseOnSelect
-      expand='lg'
-      sticky='top'
-      variant='dark'>
+    <Navbar bg='dark' collapseOnSelect expand='lg' sticky='top' variant='dark'>
       <Container fluid>
-        <NavbarReactBootstrap.Brand href='/'>
-          Hypensterisk
-        </NavbarReactBootstrap.Brand>
-        <NavbarReactBootstrap.Toggle />
-        <NavbarReactBootstrap.Collapse>
+        <Navbar.Brand href='/'>Hypensterisk</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
           <Nav defaultActiveKey={1} className='ms-auto'>
             <Nav.Item>
               <Nav.Link eventKey={1} href='#profile'>
@@ -45,8 +38,8 @@ export default function Navbar() {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-        </NavbarReactBootstrap.Collapse>
+        </Navbar.Collapse>
       </Container>
-    </NavbarReactBootstrap>
+    </Navbar>
   )
 }
