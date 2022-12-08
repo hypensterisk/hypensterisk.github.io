@@ -11,35 +11,42 @@ import {Container, Nav, Navbar} from 'react-bootstrap'
 
 export default function Header() {
   return (
-    <Navbar bg='dark' collapseOnSelect expand='lg' sticky='top' variant='dark'>
-      <Container fluid>
-        <Navbar.Brand href='/'>Hypensterisk</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse>
-          <Nav defaultActiveKey={1} className='ms-auto'>
-            <Nav.Item>
-              <Nav.Link eventKey={1} href='#profile'>
-                <FontAwesomeIcon icon={faUser} /> Profile
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey={2} href='#about'>
-                <FontAwesomeIcon icon={faInfoCircle} /> About
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey={3} href='#project'>
-                <FontAwesomeIcon icon={faList} /> Project
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey={4} href='#contact'>
-                <FontAwesomeIcon icon={faMessage} /> Contact
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header>
+      <Navbar
+        bg='dark'
+        collapseOnSelect
+        expand='lg'
+        sticky='top'
+        variant='dark'>
+        <Container fluid>
+          <Navbar.Brand href='/'>Hypensterisk</Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse>
+            <Nav defaultActiveKey={1} className='ms-auto'>
+              <Nav.Item>
+                <Nav.Link eventKey={1} href='#profile'>
+                  <FontAwesomeIcon icon={faUser} /> Profile
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey={2} href='#about'>
+                  <FontAwesomeIcon icon={faInfoCircle} /> About
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey={3} href='#project'>
+                  <FontAwesomeIcon icon={faList} /> Project
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey={4} href='#contact'>
+                  <FontAwesomeIcon icon={faMessage} /> Contact
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
   )
 }
